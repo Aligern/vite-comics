@@ -16,6 +16,7 @@
         name: 'footerTop',
         data() {
             return {
+                // here we create the array of objects for the footerTop to create our menu
                 navFooter: [
                     {
                         img: '/img/buy-comics-digital-comics.png',
@@ -64,7 +65,7 @@
             width: 55px;
             height: 65px;
             display: block;
-            padding: 5px;
+            padding: 6px;
         }
         a {
         color: white;

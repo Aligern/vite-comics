@@ -2,6 +2,7 @@
     <div id="footerMid" >
        <div class="container d-flex justify-content-center"> 
         <div id="left" class="text-white d-flex">
+            <!-- we print the title and the list -->
             <ul  v-for="(item, index) in footerList" :key="index">
             {{ item.title }}
             <li v-for="(itemlist, i) in item.list" :key="i">
@@ -25,6 +26,7 @@
         name: 'footerMid',
         data() {
             return {
+                // here we create the array of objects for the footerMid to create our menu
                 footerList: [
                     {
                         title: 'DC COMICS',
