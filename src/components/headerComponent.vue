@@ -81,6 +81,7 @@ header {
             a{
                 text-decoration: none;
                 color: black;
+                font-weight: 700;
             }
 }
 }
