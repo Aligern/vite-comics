@@ -1,13 +1,13 @@
 <template>
-    <div class="text-white">
-        <ul>
-            <li v-for="(item, index) in navFooter" :key="index">
-                <img :src="item.img" alt="">
+    <div id="footerTop" class="text-white">
+        <div class="container">
+            <div id="box" v-for="(item, index) in navFooter" :key="index">
+                <img :src="item.img" alt="Logos">
                 <a href="item.url">
                     {{ item.text }}
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -49,11 +49,29 @@
 </script>
 
 <style lang="scss" scoped>
-ul {
+@use '../assets/styles/partials/variables' as *;
+#footerTop {
+    background-color: $backgroundFooter;
+    display: flex;
+    height: 150px;
+    div {
     list-style-type: none;
     display: flex;
-    a {
+    justify-content: space-between;
+    #box {
+        align-items: center;
+        img {
+            width: 55px;
+            height: 65px;
+            display: block;
+            padding: 5px;
+        }
+        a {
+        color: white;
         text-decoration: none;
+        font-weight: 600;
     }
+    }
+}
 }
 </style>

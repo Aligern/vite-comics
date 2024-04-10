@@ -69,7 +69,7 @@
 </script>
 
 <style lang="scss" scoped>
-    $backgroundNav: #FFFFFF;
+@use '../assets/styles/partials/variables' as *;
 header {
     background-color: $backgroundNav;
         ul{
