@@ -15,9 +15,6 @@
        <div id="right">
        </div>
         </div>
-   
-
-    
     </div>
 </template>
 

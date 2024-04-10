@@ -27,6 +27,7 @@
         name: 'footerbot',
         data(){
             return {
+                // we create the array of objects for the footerbot to create our CTA 
                 followList: [
                     {
                         img: '/img/footer-facebook.png'
