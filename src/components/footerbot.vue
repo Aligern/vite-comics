@@ -8,7 +8,7 @@
             </div>
             <div class="d-flex align-items-center">
                 <span>
-                    Follow us
+                    FOLLOW US
                 </span>
                 <ul>
                     <li v-for="(item, index) in followList">
