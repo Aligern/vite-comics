@@ -1,60 +1,13 @@
 <template>
-<header>
-    <div class="d-flex justify-content-between">
+<header class=" pt-3 pb-3 ps-5">
+    <div class="d-flex justify-content-evenly align-items-center">
         <div>
-            <img src="/img/dc-logo.png" alt="Logo">
+            <img :src="logoNavbar" alt="Logo">
         </div>
         <div>
             <ul>
-                <li>
-                    <a href="#">
-                        Characters
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Comics
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Movies
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        TV
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Games
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Collectibles
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Videos
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Fans
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        News
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Shop
-                    </a>
+                <li v-for="(item, index) in navBar">
+                   <a href="item.url">{{ item.name }}</a> 
                 </li>
             </ul>
         </div>
@@ -65,17 +18,70 @@
 <script>
     export default {
         name: 'headerComponent',
+        data() {
+            return {
+                logoNavbar:'./img/dc-logo.png',
+                navBar: [
+                    {
+                        name: 'CHARACTERS',
+                        url: '#',
+                    },
+                    {
+                        name: 'COMICS',
+                        url: '#',
+                    },
+                    {
+                        name: 'MOVIES',
+                        url: '#',
+                    },
+                    {
+                        name: 'TV',
+                        url: '#',
+                    },
+                    {
+                        name: 'GAMES',
+                        url: '#',
+                    },
+                    {
+                        name: 'COLLECTIBLES',
+                        url: '#',
+                    },
+                    {
+                        name: 'VIDEOS',
+                        url: '#',
+                    },
+                    {
+                        name: 'FANS',
+                        url: '#',
+                    },
+                    {
+                        name: 'NEWS',
+                        url: '#',
+                    },
+                    {
+                        name: 'SHOP',
+                        url: '#',
+                    }
+                ]
+            }
+        }
     }
 </script>
 
 <style lang="scss" scoped>
-    ul{
-    list-style-type: none;
-    display: flex;
+    $backgroundNav: #FFFFFF;
+header {
+    background-color: $backgroundNav;
+        ul{
+        list-style-type: none;
+        display: flex;
+}
         li {
             padding: 6px;
-            
+            a{
+                text-decoration: none;
+                color: black;
+            }
 }
 }
-
 </style>
