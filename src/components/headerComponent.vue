@@ -17,7 +17,7 @@
 
 <script>
     export default {
-        name: 'headerComponent',
+        name: 'HeaderComponent',
         data() {
             return {
                 logoNavbar:'./img/dc-logo.png',

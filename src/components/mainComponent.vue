@@ -8,7 +8,7 @@
 
 <script>
     export default {
-        name: 'mainComponent',
+        name: 'MainComponent',
     }
 </script>
 

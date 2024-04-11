@@ -1,20 +1,20 @@
 <template>
-    <footerTop />
-    <footerMid />
-    <footerbot />
+    <FooterTop />
+    <FooterMid />
+    <Footerbot />
 </template>
 
 <script>
 // we take the footerTop, footerMid and footerbot components
-import footerTop from './footerTop.vue';
-import footerMid from './footerMid.vue';
-import footerbot from './footerbot.vue';
+import FooterTop from './FooterTop.vue';
+import FooterMid from './FooterMid.vue';
+import Footerbot from './Footerbot.vue';
     export default {
-        name: 'footerComponent',
+        name: 'FooterComponent',
         components: {
-            footerTop,
-            footerMid,
-            footerbot
+            FooterTop,
+            FooterMid,
+            Footerbot
         },  
     }
 </script>

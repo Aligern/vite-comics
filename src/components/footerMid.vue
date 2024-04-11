@@ -5,7 +5,7 @@
             <!-- we print the title and the list -->
             <ul  v-for="(item, index) in footerList" :key="index">
             {{ item.title }}
-            <li v-for="(itemlist, i) in item.list" :key="i">
+            <li v-for="(itemlist, i) in item.link" :key="i">
                <a href="">
                 {{ itemlist }}
                </a>
@@ -20,15 +20,15 @@
 
 <script>
     export default {
-        name: 'footerMid',
+        name: 'FooterMid',
         data() {
             return {
                 // here we create the array of objects for the footerMid to create our menu
                 footerList: [
                     {
                         title: 'DC COMICS',
-                        list: [
-                          'Characters',
+                        link: [
+                            'Characters',
                             'Comics',
                             'Movies',
                             'TV',
@@ -39,14 +39,14 @@
                     },
                     {
                         title: 'SHOP',
-                        list: [
+                        link: [
                             'Shop DC',
                             'Shop DC Collectibles'
                         ]
                     },
                     {
                         title: 'DC',
-                        list: [
+                        link: [
                             'Terms Of Use',
                             'Privacy policy (New)',
                             'Ad Choices',
@@ -62,7 +62,7 @@
                     },
                     {
                         title: 'SITES',
-                        list: [
+                        link: [
                             'DC',
                             'MAD Magazine',
                             'DC Kids',

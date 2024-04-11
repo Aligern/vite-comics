@@ -13,7 +13,7 @@
 
 <script>
     export default {
-        name: 'footerTop',
+        name: 'FooterTop',
         data() {
             return {
                 // here we create the array of objects for the footerTop to create our menu
