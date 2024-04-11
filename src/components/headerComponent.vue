@@ -79,10 +79,15 @@ header {
         li {
             padding: 6px;
             a{
+                border-bottom: 3px solid transparent;
                 text-decoration: none;
                 color: black;
                 font-weight: 700;
             }
+}
+a:hover {
+    color: $backgroundFooter;
+    border-bottom: 3px solid $backgroundFooter;
 }
 }
 </style>

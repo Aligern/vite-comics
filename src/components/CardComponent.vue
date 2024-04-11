@@ -1,7 +1,7 @@
 <template>
     <div>
         <div id="card">
-            <img  :src="image" :alt="type">
+            <img  :src="image" class="w-100 img-fluid " :alt="type">
         </div>
         <div id="title">
             <h6>
@@ -25,8 +25,7 @@
 <style lang="scss" scoped>
 #card {
     img {
-    width: 150px;
-    height: 200px;
+    min-height: 300px;
     margin-bottom: 10px;
 }
 }
