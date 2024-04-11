@@ -35,14 +35,19 @@
 @use '../assets/styles/partials/variables' as *;
 #card {
     position: relative;
+    &:hover {
+        img {
+            opacity: 0.3;
+        }
+        .buy {
+        opacity: 1;
+    }
+    }
     img {
     min-height: 300px;
     margin-bottom: 10px;
     transition: .5s ease;
     backface-visibility: hidden;
-        &:hover {
-            opacity: 0.3;
-        }
 }
 .ls-hover {
     transition: .5s ease;
@@ -51,10 +56,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-&:hover .buy {
-    opacity: 1;
-    transition: .7s ease;
 }
 .buy {
     background-color: $backgroundFooter;
@@ -65,9 +66,9 @@
     border-radius: 15px;
     opacity: 0;
     cursor: pointer;
+    transition: .7s ease;
 }
 }
-
 #title {
     margin-bottom: 50px;
 }
