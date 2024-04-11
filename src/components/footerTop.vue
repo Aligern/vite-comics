@@ -63,7 +63,7 @@
         align-items: center;
         img {
             width: 55px;
-            height: 65px;
+            height: 58px;
             display: block;
             padding: 6px;
         }
