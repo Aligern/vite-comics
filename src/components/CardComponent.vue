@@ -54,7 +54,7 @@
 }
 &:hover .buy {
     opacity: 1;
-    transition: .5s ease;
+    transition: .7s ease;
 }
 .buy {
     background-color: $backgroundFooter;
@@ -64,6 +64,7 @@
     padding: 10px 10px;
     border-radius: 15px;
     opacity: 0;
+    cursor: pointer;
 }
 }
 
