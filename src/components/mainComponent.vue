@@ -10,7 +10,7 @@
             </div>
             <div id="cards" class="row m-auto text-light" >
                 <div id="cardCol" class="col-12 col-md-3 col-lg-2" v-for="(item, index) in comics" :key="index">
-                    <CardComponent :image="item.thumb" :type="item.type" :title="item.series" />
+                    <CardComponent :image="item.thumb" :type="item.type" :title="item.series" :price="item.price" />
                 </div>
             </div>
             <div id="button" class="d-flex justify-content-center">

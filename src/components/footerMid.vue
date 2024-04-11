@@ -3,7 +3,7 @@
        <div class="container d-flex justify-content-center"> 
         <div id="left" class="text-white d-flex">
             <!-- we print the title and the list -->
-            <ul  v-for="(item, index) in footerList" :key="index">
+            <ul id="title" v-for="(item, index) in footerList" :key="index">
             {{ item.title }}
             <li v-for="(itemlist, i) in item.link" :key="i">
                <a href="">
@@ -101,6 +101,12 @@
         background-position: right center;
         background-repeat: no-repeat;
         background-size: 70%;
+    }
+    a:hover{
+        color: white;
+    }
+    #title {
+        font-weight: 700;
     }
 }
 </style>

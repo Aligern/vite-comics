@@ -7,6 +7,9 @@
             <h6>
                 {{ title }}
             </h6>
+            <span>
+                {{ price }}
+            </span>
         </div>
     </div>
 </template>
@@ -18,6 +21,7 @@
             'image',
             'type',
             'title',
+            'price'
         ]
     }
 </script>

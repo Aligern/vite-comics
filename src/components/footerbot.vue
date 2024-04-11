@@ -10,10 +10,11 @@
                 <span>
                     FOLLOW US
                 </span>
+
                 <ul>
                     <li v-for="(item, index) in followList">
                         <a href="">
-                           <img :src="item.img" alt="">
+                           <img :src="item.img" alt="Icons">
                         </a>
                     </li>
                 </ul>
