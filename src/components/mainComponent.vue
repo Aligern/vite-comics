@@ -1,15 +1,24 @@
 <template>
-    <div id="main" class="text-white ps-5 pt-3">
+    <div id="main">
+        <div id="jumbotron">
+            
+        </div>
+
         <div id="mainTitle">
             <h5>
            Current Series
             </h5>
         </div>
         
-        <div id="cards" class="row" >
-            <div id="cardCol" class="col-12 col-md-3" v-for="(item, index) in comics" :key="index">
+        <div id="cards" class="row container m-auto text-light" >
+            <div id="cardCol" class="col-12 col-md-3 col-lg-2" v-for="(item, index) in comics" :key="index">
                 <CardComponent :image="item.thumb" :type="item.type" :title="item.series" />
             </div>
+        </div>
+        <div id="button" class="d-flex justify-content-center">
+            <button>
+                Load More
+            </button>
         </div>
     </div>
 </template>
@@ -37,5 +46,20 @@ import CardComponent from './CardComponent.vue';
         width: 150px;
         padding: 5px;
         text-align: center;
+        transform: translateY(-50%);
+        color: white;
+        margin-left: 100px;
+    }
+    #jumbotron {
+        height: 400px;
+        background-image: url('../img/jumbotron.jpg');
+    }
+    button {
+        background-color: $backgroundFooter;
+        margin-bottom: 20px;
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        font-weight: 600;
     }
 </style>

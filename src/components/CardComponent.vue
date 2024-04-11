@@ -1,10 +1,12 @@
 <template>
     <div>
-        <div class="card">
-            <img :src="image" :alt="type">
+        <div id="card">
+            <img  :src="image" :alt="type">
         </div>
-        <div>
-            <h4>{{ title }}</h4>
+        <div id="title">
+            <h6>
+                {{ title }}
+            </h6>
         </div>
     </div>
 </template>
@@ -15,11 +17,22 @@
         props: [
             'image',
             'type',
-            'title'
+            'title',
         ]
     }
 </script>
 
 <style lang="scss" scoped>
+#card {
+    img {
+    width: 150px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+}
+
+#title {
+    margin-bottom: 50px;
+}
 
 </style>
